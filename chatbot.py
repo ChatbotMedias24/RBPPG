@@ -34,10 +34,10 @@ with textcontainer:
     
 st.sidebar.subheader("Suggestions:")
 questions = [
-        "Donne moi un résumé du rapport ",
+        "Donnez-moi un résumé du rapport ",
         "Quels sont les principaux secteurs d'exportation du Maroc en 2022 ?",
-        "Comment la pandémie de Covid-19 a-t-elle affecté les envois de fonds des migrants au Maroc ?",
-        "Quel est le taux de croissance du PIB du Maroc en 2022 ?"
+        "Comment la pandémie de Covid-19 a-t-elle affecté les envois de fonds des MRE au Maroc ?"
+        
     ]    
  
 load_dotenv(st.secrets["OPENAI_API_KEY"])
