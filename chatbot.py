@@ -84,8 +84,6 @@ def main():
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
-                if "Donnez-moi un résumé du rapport " in selected_questions:
-                    response = "Le rapport annuel a pour objectif de fournir des données sur la balance des paiements et sur la position extérieure globale au Maroc pour l'année 2022. Il montre que la croissance économique mondiale et le commerce mondial de biens et services ont augmenté, ainsi que les envois de fonds des migrants et les IDE au niveau international. En ce qui concerne l'économie marocaine, le déficit budgétaire s'est allégé à 5,2% du PIB et les recettes ordinaires ont augmenté de 53,6 milliards de dirhams."
                 print(cb)
             st.write(response)
 
